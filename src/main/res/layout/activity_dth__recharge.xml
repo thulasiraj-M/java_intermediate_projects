@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+
+    >
+
+
+        <RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.sparkgrow.erecharge.DTH_Recharge" >
+
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/topheader"
+        android:padding="@dimen/padding3"
+        android:layout_height="fill_parent"
+        >
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin2"
+    android:gravity="center"
+    android:background="@drawable/gradent_brownbackground"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding2"
+        android:text="@string/dth_recharge"
+        android:textColor="@color/textcolorblack"
+        android:textSize="@dimen/padding4"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="@dimen/padding2"
+        android:layout_height="fill_parent"
+        >
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            >
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+               android:layout_margin="@dimen/padding2"
+                 android:gravity="center"
+                 android:orientation="horizontal"
+                >
+                 <Spinner
+                     android:layout_width="fill_parent"
+
+                     android:id="@+id/dthopt"
+                     android:layout_height="@dimen/spinerhight"
+                     android:layout_weight="0.8"
+                     android:padding="@dimen/padding1"
+
+                     android:background="@drawable/spinner_style"
+                     android:layout_alignParentTop="true"
+                     />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="@dimen/padding2"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <Spinner
+                    android:layout_width="fill_parent"
+
+                    android:id="@+id/opertortype"
+                    android:layout_height="@dimen/spinerhight"
+                    android:layout_weight="0.8"
+                    android:padding="@dimen/padding1"
+
+                    android:background="@drawable/spinner_style"
+                    android:layout_alignParentTop="true"
+                    />
+
+            </LinearLayout>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_margin="@dimen/padding2"
+                android:background="@drawable/textboxgradent"
+                android:hint="Mobile no"
+                android:singleLine="true"
+                android:id="@+id/dth_custid_txt"
+                android:layout_height="@dimen/iconheight"
+                android:padding="@dimen/padding2"
+                />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_margin="@dimen/padding2"
+                android:background="@drawable/textboxgradent"
+                android:hint="Amount"
+                 android:inputType="number"
+                 android:singleLine="true"
+                android:id="@+id/dth_recharge_amount_txt"
+                android:drawableLeft="@drawable/rs"
+                android:layout_height="@dimen/iconheight"
+                android:padding="@dimen/padding2"
+                />
+           <LinearLayout
+                android:layout_width="fill_parent"
+                android:padding="@dimen/padding4"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding2"
+                    android:id="@+id/dth_recharge_btn"
+                    android:paddingBottom="@dimen/padding2"
+                    android:text="@string/btn_name_process"
+                    android:textSize="@dimen/padding3"
+                    android:background="@drawable/buttoncolor"
+                    android:textColor="@color/textcolorwhite"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</RelativeLayout>
+
+
+
+
+</RelativeLayout>

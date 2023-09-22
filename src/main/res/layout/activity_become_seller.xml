@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+     >
+
+<ScrollView 
+    android:layout_width="fill_parent"
+      
+    android:layout_height="wrap_content"
+    >
+<LinearLayout 
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+      
+        android:padding="@dimen/padding3"
+        android:layout_height="fill_parent"
+        >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margin2"
+    android:gravity="center"
+    android:background="@drawable/gradent_brownbackground"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding2"
+        android:text="@string/become_saller"
+        android:textColor="@color/textcolorblack"
+        android:textSize="@dimen/padding4"
+        android:textStyle="bold"
+        />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_marginTop="@dimen/padding2"
+        android:layout_height="fill_parent"
+        >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                  android:paddingLeft="@dimen/padding2"
+                  android:textSize="@dimen/padding2"
+                android:text="@string/Your_name"
+                 />
+
+            <EditText
+                android:id="@+id/pro_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding2"
+                android:background="@drawable/textboxgradent"
+                android:padding="@dimen/padding2" />
+
+             <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                  android:paddingLeft="@dimen/padding2"
+                  android:textSize="@dimen/padding2"
+                android:text="@string/mobile_no"
+                 />
+
+            <EditText
+                android:id="@+id/pro_mabile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_margin="@dimen/padding2"
+                android:background="@drawable/textboxgradent"
+                android:padding="@dimen/padding2" />
+
+             <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                  android:paddingLeft="@dimen/padding2"
+                  android:textSize="@dimen/padding2"
+                android:text="@string/Your_Email_ID"
+                 />
+
+            <EditText
+                android:id="@+id/pro_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding2"
+                android:background="@drawable/textboxgradent"
+                android:padding="@dimen/padding2" />
+
+             <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                  android:paddingLeft="@dimen/padding2"
+                  android:textSize="@dimen/padding2"
+                android:text="@string/city"
+                 />
+
+            <EditText
+                android:id="@+id/pro_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding2"
+                android:background="@drawable/textboxgradent"
+                android:padding="@dimen/padding2" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                  android:paddingLeft="@dimen/padding2"
+                  android:textSize="@dimen/padding2"
+                android:text="@string/business_name"
+                 />
+
+            <EditText
+                android:id="@+id/business_saller"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding2"
+                android:background="@drawable/textboxgradent"
+                android:padding="@dimen/padding2" />
+
+             <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                  android:paddingLeft="@dimen/padding2"
+                  android:textSize="@dimen/padding2"
+                android:text="@string/business_address"
+                 />
+
+            <EditText
+                android:id="@+id/address_saller"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding2"
+                android:background="@drawable/textboxgradent"
+                android:padding="@dimen/padding2" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                  android:paddingLeft="@dimen/padding2"
+                  android:textSize="@dimen/padding2"
+                android:text="@string/chosse_your_cat"
+                 />
+            <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/padding1"
+                                    android:layout_marginRight="@dimen/padding1"
+                                    android:layout_marginTop="@dimen/padding1"
+                                    android:background="@drawable/spinnergradent"
+                                    android:gravity="center" >
+
+                                    <Spinner
+                                        android:id="@+id/choose_saller"
+
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/spinerhight"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_weight="0.8"
+                                        android:background="@android:color/transparent"
+                                        android:padding="@dimen/padding1" />
+
+                                    <ImageView
+                                        android:id="@+id/img"
+                                        android:layout_width="@dimen/padding4"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/spinner_arrow" />
+                                </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:padding="@dimen/padding2"
+                android:layout_height="wrap_content"
+                >
+
+                <Button
+                    android:id="@+id/saller_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttoncolor"
+                    android:paddingBottom="@dimen/padding2"
+                    android:paddingTop="@dimen/padding2"
+                    android:text="@string/btn_submit"
+                    android:textColor="@color/textcolorwhite"
+                    android:textSize="@dimen/padding3" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>

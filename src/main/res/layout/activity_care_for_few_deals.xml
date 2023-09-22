@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#fff"
+    
+    android:orientation="vertical"
+     
+     >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        android:background="@drawable/gradent_brownbackground"
+        android:orientation="vertical"
+        android:weightSum="4"
+        >
+        <LinearLayout 
+            
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            
+            android:orientation="vertical"
+            android:layout_weight="1.1"
+            >
+            
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding1"
+            android:gravity="center"
+            android:text="@string/care_for_few_deals"
+            android:textColor="@color/textcolorblack"
+            android:textSize="@dimen/padding3"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/spnerlinearlayou"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding1"
+                android:background="@drawable/textboxgradent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/coupan_category"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/spinerhight"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/textboxgradent"
+                    android:padding="@dimen/padding1" />
+
+                <ImageView
+                    android:layout_width="@dimen/padding4"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:src="@drawable/spinner_arrow" />
+            </LinearLayout>
+        
+ </LinearLayout>
+            
+        </LinearLayout>
+        <LinearLayout 
+            
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            
+            android:layout_weight="0.7"
+            >
+            <ListView
+                    android:id="@+id/list_coup"
+                    
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+                </ListView>
+        </LinearLayout>
+        <LinearLayout 
+            
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="@dimen/padding1"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+    android:id="@+id/aplypanel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_marginBottom="@dimen/padding1"
+    android:background="@drawable/radiusfor_index_field"
+    android:padding="@dimen/padding1"
+    android:weightSum="2" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <EditText
+            android:id="@+id/promo_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/iconheight"
+            android:layout_margin="@dimen/padding1"
+            android:layout_weight="1"
+            android:background="@drawable/radiusfor_index_field_border_brawn"
+            android:hint="Vouchar code"
+            android:padding="@dimen/padding1" />
+
+        <TextView
+            android:id="@+id/recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            
+            android:text="@string/rechargeof"
+            android:textColor="@color/textcolorblack"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/mobilnum"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            
+            android:text="@string/Mobileno"
+            android:textColor="@color/textcolorblack"
+            android:textSize="@dimen/textsize2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.4"
+        android:orientation="vertical"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/apply_voucher_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding1"
+            android:layout_weight="1"
+            android:background="@drawable/buttoncolor"
+            android:text="@string/apply"
+            android:textColor="@color/textcolorwhite"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/rupee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/padding1"
+            android:text="@string/rsbal"
+            android:textColor="@color/textcolorblack"
+            android:textSize="@dimen/textsize2" />
+    </LinearLayout>
+</LinearLayout>
+        </LinearLayout>
+        <LinearLayout 
+            
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            
+            
+            android:layout_weight="1.1"
+            >
+           
+    <Button
+        android:id="@+id/payto"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:background="@drawable/buttoncolor"
+        
+        android:text="@string/processd_to_pay"
+        android:textColor="@color/textcolorwhite"
+        android:textSize="@dimen/padding3" />
+
+        </LinearLayout>
+    </LinearLayout>
+    
+
+</LinearLayout>

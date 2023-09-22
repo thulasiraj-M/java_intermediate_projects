@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- large screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="margin1">30dp</dimen>
+    <dimen name="margin2">6dp</dimen>
+    <dimen name="padding1">10dp</dimen>
+    <dimen name="padding2">15dp</dimen>
+    <dimen name="padding3">25dp</dimen>
+     <dimen name="padding4">40dp</dimen>
+    <dimen name="sze1">2dp</dimen>
+    <dimen name="textsize1">22dp</dimen>
+    <dimen name="iconheight">64dp</dimen>
+    <dimen name="logosizehight">80dp</dimen>
+    <dimen name="logosizewidth">160dp</dimen>
+    <dimen name="textsize2">20dp</dimen>
+    <dimen name="setting_profile_image_width">140dp</dimen>
+    <dimen name="round">20dp</dimen>
+    <dimen name="line">4dp</dimen>
+    <dimen name="spinerhight">46dp</dimen>
+    <dimen name="actionbarhight">80dp</dimen>
+    <dimen name="drawericonheight">62dp</dimen>
+     <dimen name="widthupdatepass">320dp</dimen>
+    <dimen name="heightupdatepass">220dp</dimen>
+     <dimen name="freepick">40dp</dimen>
+     <dimen name="freepick_padding">13dp</dimen>
+</resources>

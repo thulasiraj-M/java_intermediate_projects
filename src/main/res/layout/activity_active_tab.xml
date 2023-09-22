@@ -1,0 +1,591 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+   >
+
+    <android.support.v4.widget.DrawerLayout
+
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            >
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/header"
+                />
+
+            <FrameLayout
+                android:id="@+id/frame_container"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Listview to display slider menu -->
+
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:weightSum="2"
+                android:layout_below="@+id/topheader"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/middelay">
+
+                <RelativeLayout
+                    android:id="@+id/lay1"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+
+                    android:layout_below="@+id/topheader"
+
+                    android:layout_height="wrap_content">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/myviewpager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="130dp"
+                        android:background="@drawable/gradent_index_screen"
+                        />
+
+                    <com.recharge.nirbhay.rechargewallete.viewpagerindicator.indicatorlibrary.CirclePageIndicator
+                        android:id="@+id/indicator"
+
+
+                        android:layout_height="23dp"
+
+                        android:layout_width="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="130dp" />
+
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="290dp"
+                    android:id="@+id/selectservice"
+
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:orientation="vertical"
+
+
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+
+                        android:background="@drawable/gradent_index_screen"
+                        >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="normal"
+
+                            android:text="Select a service"
+                            android:textColor="@color/textcolorwhite"
+                            android:textSize="@dimen/padding3"
+                            />
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/padding2"
+                            android:layout_marginBottom="@dimen/padding2"
+                            android:weightSum="2"
+                            >
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/buttoncolor"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:weightSum="4"
+
+
+                                android:layout_weight="1"
+                                >
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+
+
+                                    android:layout_weight="1"
+                                    >
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:padding="8dp"
+                                    android:orientation="vertical"
+                                    >
+
+                                    <LinearLayout
+                                        android:id="@+id/insurencebtn"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="50dp"
+
+                                        android:background="@drawable/radiusfor_index_field_border_color"
+                                        android:orientation="horizontal"
+
+                                        android:gravity="center"
+
+                                        android:weightSum="2" >
+
+                                        <ImageView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="@dimen/iconheight"
+                                            android:layout_weight="1.4"
+                                            android:padding="4dp"
+                                            android:src="@drawable/smartphone"
+                                            />
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:gravity="center"
+                                            android:layout_weight="0.6"
+                                            android:textSize="@dimen/padding3"
+                                            android:textStyle="bold"
+                                            android:layout_height="wrap_content"
+                                            android:text="Prepaid"
+                                            />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/insuran23ceId"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/radiusfor_index_field_border_color"
+                                        android:orientation="horizontal"
+
+                                        android:gravity="center"
+
+                                        android:weightSum="2" >
+
+                                        <ImageView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="@dimen/iconheight"
+                                            android:layout_weight="1.4"
+                                            android:padding="4dp"
+                                            android:src="@drawable/satellitedish"
+                                            />
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:gravity="center"
+                                            android:layout_weight="0.6"
+                                            android:textSize="@dimen/padding3"
+                                            android:textStyle="bold"
+                                            android:layout_height="wrap_content"
+                                            android:text="DTH"
+                                            />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/insura12nceId"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/radiusfor_index_field_border_color"
+                                        android:orientation="horizontal"
+
+                                        android:gravity="center"
+
+                                        android:weightSum="2" >
+
+                                        <ImageView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="@dimen/iconheight"
+                                            android:layout_weight="1.4"
+                                            android:padding="4dp"
+                                            android:src="@drawable/telephoneofolddesign"
+                                            />
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:gravity="center"
+                                            android:layout_weight="0.6"
+                                            android:textSize="@dimen/padding3"
+                                            android:textStyle="bold"
+                                            android:layout_height="wrap_content"
+                                            android:text="Landline"
+                                            />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/insuranc123eId"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/radiusfor_index_field_border_color"
+                                        android:orientation="horizontal"
+
+                                        android:gravity="center"
+
+                                        android:weightSum="2" >
+
+                                        <ImageView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="@dimen/iconheight"
+                                            android:layout_weight="1.4"
+                                            android:padding="4dp"
+                                            android:src="@drawable/fuel"
+                                            />
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:gravity="center"
+                                            android:layout_weight="0.6"
+                                            android:textSize="@dimen/padding3"
+                                            android:textStyle="bold"
+                                            android:layout_height="wrap_content"
+                                            android:text="Gas"
+                                            />
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/padding1"
+                                    android:layout_weight="1"
+                                    >
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                >
+
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:padding="8dp"
+                                    android:orientation="vertical"
+
+                                    >
+
+                                    <LinearLayout
+                                        android:id="@+id/insurance342342Id"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="50dp"
+
+                                        android:background="@drawable/radiusfor_index_field_border_color"
+                                        android:orientation="horizontal"
+
+                                        android:gravity="center"
+
+                                        android:weightSum="2" >
+
+                                        <ImageView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="@dimen/iconheight"
+                                            android:layout_weight="1.4"
+                                            android:padding="4dp"
+                                            android:src="@drawable/smartphone"
+                                            />
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:gravity="center"
+                                            android:layout_weight="0.6"
+                                            android:textSize="@dimen/padding3"
+                                            android:textStyle="bold"
+                                            android:layout_height="wrap_content"
+                                            android:text="Postpaid"
+                                            />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/insuran23423ceId"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/radiusfor_index_field_border_color"
+                                        android:orientation="horizontal"
+
+                                        android:gravity="center"
+
+                                        android:weightSum="2" >
+
+                                        <ImageView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="@dimen/iconheight"
+                                            android:layout_weight="1.4"
+                                            android:padding="4dp"
+                                            android:src="@drawable/pendrive"
+                                            />
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:gravity="center"
+                                            android:layout_weight="0.6"
+                                            android:textSize="@dimen/padding3"
+                                            android:textStyle="bold"
+                                            android:layout_height="wrap_content"
+                                            android:text="Data Card"
+                                            />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/insura34223nceId"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/radiusfor_index_field_border_color"
+                                        android:orientation="horizontal"
+
+                                        android:gravity="center"
+
+                                        android:weightSum="2" >
+
+                                        <ImageView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="@dimen/iconheight"
+                                            android:layout_weight="1.4"
+                                            android:padding="4dp"
+                                            android:src="@drawable/ele"
+                                            />
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:gravity="center"
+                                            android:layout_weight="0.6"
+                                            android:textSize="@dimen/padding3"
+                                            android:textStyle="bold"
+                                            android:layout_height="wrap_content"
+                                            android:text="Electricity"
+                                            />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/insuranceId"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/radiusfor_index_field_border_color"
+                                        android:orientation="horizontal"
+
+                                        android:gravity="center"
+
+                                        android:weightSum="2" >
+
+                                        <ImageView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="@dimen/iconheight"
+                                            android:layout_weight="1.4"
+                                            android:padding="4dp"
+                                            android:src="@drawable/insurance"
+                                            />
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:gravity="center"
+                                            android:layout_weight="0.6"
+                                            android:textSize="@dimen/padding3"
+                                            android:textStyle="bold"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/Insurance"
+                                            />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:padding="@dimen/padding1"
+                        android:visibility="gone"
+                        android:id="@+id/midel"
+                        android:layout_marginTop="@dimen/margin1"
+                        android:weightSum="2"
+                        android:background="@drawable/indexmiddlelayout"
+                        android:orientation="horizontal"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/viasmsId"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="@dimen/margin2"
+                            android:layout_weight="1"
+                            android:background="@drawable/radiusfor_index_field"
+                            android:padding="@dimen/margin2" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                android:id="@+id/viasms"
+                                android:gravity="center"
+                                android:padding="@dimen/margin2"
+                                android:background="@drawable/radiusfor_index_field"
+                                >
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.4"
+                                    android:src="@drawable/sms"
+                                    />
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:gravity="right"
+                                    android:layout_weight="0.6"
+                                    android:textSize="@dimen/padding3"
+                                    android:textStyle="bold"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/viasms"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/walleteId"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin2"
+                            android:layout_weight="1"
+                            android:background="@drawable/radiusfor_index_field"
+                            android:padding="@dimen/padding1" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/iconheight"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                android:gravity="center"
+                                android:padding="@dimen/margin2"
+                                android:background="@drawable/radiusfor_index_field"
+                                >
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="@dimen/iconheight"
+                                    android:layout_weight="1.4"
+                                    android:src="@drawable/wallet"
+                                    />
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:gravity="right"
+                                    android:layout_weight="0.6"
+                                    android:textSize="@dimen/padding3"
+                                    android:textStyle="bold"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/wallet"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/list_slidermenu"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:background="@color/buttoncolor"
+            android:layout_gravity="left"
+
+            android:choiceMode="singleChoice"
+
+
+
+
+            android:dividerHeight="0dp"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1.3" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="fill_parent">
+                    <ImageView
+                        android:id="@+id/loginId1122"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+
+
+                        android:src="@drawable/home2" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Home"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_height="fill_parent">
+                    <ImageView
+                        android:id="@+id/loginId111"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+
+
+                        android:src="@drawable/walletlogo" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wallet"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_height="fill_parent">
+                    <ImageView
+                        android:id="@+id/loginId11"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+
+
+                        android:src="@drawable/proicon" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Profile"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</RelativeLayout>

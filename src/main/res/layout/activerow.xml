@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:background="@drawable/radiusfor_index_field"
+      android:padding="@dimen/padding2"
+      android:weightSum="2"
+      >
+      <LinearLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:layout_weight="1.4"
+          android:gravity="right"
+          android:orientation="horizontal"
+         
+          >
+          <ImageView 
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:src="@drawable/activerowicon"
+              />
+           <TextView 
+              android:layout_width="@dimen/sze1"
+              android:layout_height="fill_parent"
+              android:background="@color/linecolo"
+              />
+      </LinearLayout>
+      <LinearLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:weightSum="2"
+          android:orientation="horizontal"
+          android:layout_weight="0.6"
+          >
+          <LinearLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:gravity="left"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/padding2"
+              android:layout_weight="0.6"
+              >
+
+              <TextView
+                  android:id="@+id/item4"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="fksjd"
+                  android:textSize="@dimen/padding3"
+                  android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/item5"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="skjhf"
+                   android:textSize="@dimen/padding3"
+                   android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="skjfs"
+                    android:textSize="@dimen/padding3" />
+
+          </LinearLayout>
+          <LinearLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1.4"
+              android:gravity="right"
+              android:orientation="vertical"
+              >
+          </LinearLayout>
+      </LinearLayout>
+  </LinearLayout>
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/line"
+    android:background="#000"
+    />
+</LinearLayout>
